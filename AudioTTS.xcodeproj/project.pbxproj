@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3E3AB6C7185C072900BC0545 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E3AB6C6185C072900BC0545 /* ViewController.m */; };
+		3E5033FC184C379B001178BE /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E5033FB184C379B001178BE /* Storyboard.storyboard */; };
 		3E98FDC817EBF00A00E29792 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E98FDC717EBF00A00E29792 /* Foundation.framework */; };
 		3E98FDCA17EBF00A00E29792 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E98FDC917EBF00A00E29792 /* CoreGraphics.framework */; };
 		3E98FDCC17EBF00A00E29792 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E98FDCB17EBF00A00E29792 /* UIKit.framework */; };
@@ -32,6 +34,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3E3AB6C5185C071200BC0545 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		3E3AB6C6185C072900BC0545 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		3E5033FB184C379B001178BE /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
 		3E98FDC417EBF00A00E29792 /* AudioTTS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AudioTTS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E98FDC717EBF00A00E29792 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		3E98FDC917EBF00A00E29792 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -107,10 +112,13 @@
 		3E98FDCD17EBF00A00E29792 /* AudioTTS */ = {
 			isa = PBXGroup;
 			children = (
+				3E5033FB184C379B001178BE /* Storyboard.storyboard */,
 				3E98FDD617EBF00A00E29792 /* MAKAppDelegate.h */,
 				3E98FDD717EBF00A00E29792 /* MAKAppDelegate.m */,
 				3E98FDD917EBF00A00E29792 /* Images.xcassets */,
 				3E98FDCE17EBF00A00E29792 /* Supporting Files */,
+				3E3AB6C5185C071200BC0545 /* ViewController.h */,
+				3E3AB6C6185C072900BC0545 /* ViewController.m */,
 			);
 			path = AudioTTS;
 			sourceTree = "<group>";
@@ -192,6 +200,9 @@
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = Linark;
 				TargetAttributes = {
+					3E98FDC317EBF00900E29792 = {
+						DevelopmentTeam = 8RFQRNWHB9;
+					};
 					3E98FDDE17EBF00A00E29792 = {
 						TestTargetID = 3E98FDC317EBF00900E29792;
 					};
@@ -222,6 +233,7 @@
 			files = (
 				3E98FDD217EBF00A00E29792 /* InfoPlist.strings in Resources */,
 				3E98FDDA17EBF00A00E29792 /* Images.xcassets in Resources */,
+				3E5033FC184C379B001178BE /* Storyboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -240,6 +252,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3E3AB6C7185C072900BC0545 /* ViewController.m in Sources */,
 				3E98FDD817EBF00A00E29792 /* MAKAppDelegate.m in Sources */,
 				3E98FDD417EBF00A00E29792 /* main.m in Sources */,
 			);
@@ -362,6 +375,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AudioTTS/AudioTTS-Prefix.pch";
 				INFOPLIST_FILE = "AudioTTS/AudioTTS-Info.plist";
@@ -375,6 +389,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AudioTTS/AudioTTS-Prefix.pch";
 				INFOPLIST_FILE = "AudioTTS/AudioTTS-Info.plist";
@@ -444,6 +459,7 @@
 				3E98FDF217EBF00A00E29792 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3E98FDF317EBF00A00E29792 /* Build configuration list for PBXNativeTarget "AudioTTSTests" */ = {
 			isa = XCConfigurationList;
@@ -452,6 +468,7 @@
 				3E98FDF517EBF00A00E29792 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -7,9 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+@class ViewController;
 
 @interface MAKAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
+@property (strong, nonatomic) ViewController *viewController;
 
 @end

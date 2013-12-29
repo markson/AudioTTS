@@ -7,15 +7,17 @@
 //
 
 #import "MAKAppDelegate.h"
+#import "ViewController.h"
 
 @implementation MAKAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    // Override point for customization after application launch.
-    self.window.backgroundColor = [UIColor whiteColor];
-    [self.window makeKeyAndVisible];
+    CGRect viewRect = [[UIScreen mainScreen] bounds];
+    [self setWindow:[[UIWindow alloc] initWithFrame:viewRect]];
+    [self setViewController:[[ViewController alloc] init]];
+    [[self window] setRootViewController:[self viewController]];
+    [[self window] makeKeyAndVisible]; 
     return YES;
 }
 
