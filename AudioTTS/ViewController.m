@@ -1,9 +1,12 @@
 #import "ViewController.h"
+#import "QuestionAnswerPair.h"
 
 @implementation ViewController {
     UIButton *speakButton;
+    UIButton *loadButton;
     UITextField *question;
     UITextField *answer;
+    QuestionAnswerPair *qaPair;
 }
 
 -(void) loadView {
@@ -18,14 +21,26 @@
     speakButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
     speakButton.frame = CGRectMake(100, 100, 100, 44);
     speakButton.tag = 100;
-    [speakButton setTitle: @"Click" forState:UIControlStateNormal];
-    [speakButton setTitle:@"Wow" forState:UIControlStateHighlighted];
+    
+    loadButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    loadButton.frame = CGRectMake(100, 150, 100, 44);
+    loadButton.tag = 500;
+    
+    qaPair = [[QuestionAnswerPair alloc] init ];
+    [qaPair setQuestion:@"What's the best fish in the world"];
+    [qaPair setAnswer:@"It's salmon"];
+    
+    [speakButton setTitle: @"Speak" forState:UIControlStateNormal];
     speakButton.enabled = NO;
     [speakButton addTarget:self action:@selector(speakSomething:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:speakButton];
     //UILabel *title = [[UILabel alloc] initWithFrame:CGRectMake(50, 30, 200, 44)];
     //title.text = @"This is a text area";
     //[self.view addSubview:title];
+    
+    [loadButton setTitle: @"Load" forState:UIControlStateNormal];
+    [loadButton addTarget:self action:@selector(loadQA:) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:loadButton];
     
     question = [[UITextField alloc] initWithFrame:CGRectMake(50, 30, 200, 44)];
     question.tag = 200;
@@ -56,6 +71,11 @@
     //NSLog(@"Finally I can speak but only in words");
 }
 
+-(void) loadQA:(UIButton *) sender {
+    [question setText:qaPair.question];
+    [answer setText:qaPair.answer];
+    speakButton.enabled = YES;
+}
 -(void) toggleSpeakButton:(UITextField *) sender {
 //    UITextField *question = (UITextField*)[self.view viewWithTag:200];
 //    UITextField *answer = (UITextField*)[self.view viewWithTag:300];

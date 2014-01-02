@@ -21,6 +21,7 @@
 		3E98FDE317EBF00A00E29792 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E98FDCB17EBF00A00E29792 /* UIKit.framework */; };
 		3E98FDEB17EBF00A00E29792 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3E98FDE917EBF00A00E29792 /* InfoPlist.strings */; };
 		3E98FDED17EBF00A00E29792 /* AudioTTSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E98FDEC17EBF00A00E29792 /* AudioTTSTests.m */; };
+		3EF9CAF6187515ED00372537 /* QuestionAnswerPair.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EF9CAF5187515ED00372537 /* QuestionAnswerPair.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		3E98FDE817EBF00A00E29792 /* AudioTTSTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AudioTTSTests-Info.plist"; sourceTree = "<group>"; };
 		3E98FDEA17EBF00A00E29792 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		3E98FDEC17EBF00A00E29792 /* AudioTTSTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AudioTTSTests.m; sourceTree = "<group>"; };
+		3EF9CAF4187515ED00372537 /* QuestionAnswerPair.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuestionAnswerPair.h; sourceTree = "<group>"; };
+		3EF9CAF5187515ED00372537 /* QuestionAnswerPair.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuestionAnswerPair.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +118,8 @@
 				3E5033FB184C379B001178BE /* Storyboard.storyboard */,
 				3E98FDD617EBF00A00E29792 /* MAKAppDelegate.h */,
 				3E98FDD717EBF00A00E29792 /* MAKAppDelegate.m */,
+				3EF9CAF4187515ED00372537 /* QuestionAnswerPair.h */,
+				3EF9CAF5187515ED00372537 /* QuestionAnswerPair.m */,
 				3E98FDD917EBF00A00E29792 /* Images.xcassets */,
 				3E98FDCE17EBF00A00E29792 /* Supporting Files */,
 				3E3AB6C5185C071200BC0545 /* ViewController.h */,
@@ -255,6 +260,7 @@
 				3E3AB6C7185C072900BC0545 /* ViewController.m in Sources */,
 				3E98FDD817EBF00A00E29792 /* MAKAppDelegate.m in Sources */,
 				3E98FDD417EBF00A00E29792 /* main.m in Sources */,
+				3EF9CAF6187515ED00372537 /* QuestionAnswerPair.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
